@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Documento sin titulo</title>
+
+
+<script>
+
+    function escribeNombre(nombre){//nombre es un variable tratada como argumento
+
+        document.write(nombre);
+    }
+
+    var miNombre = prompt("Escribe tu nombre: ");//Asignamos valor a la variable
+
+</script>
+
+</head>
+
+
+
+
+<body>
+
+    <p style="font-size: 24px; font-weight: bold;">Hola: <script>escribeNombre(miNombre);</script>. Bienvenido a mi pagina web</p>
+    <p>Esta es una web quew trata de explicar temas de JS así que <script>escribeNombre(miNombre);</script> puedes plantear
+    las dudas que desees.</p>
+</body>
+</html>

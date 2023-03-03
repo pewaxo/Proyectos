@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Documento sin titulo</title>
+
+    <table width="25%" border="0">
+        <tr>
+             <td><label for="textfield"></label>
+             <input type="text" name="textfield" id="cMensaje">
+            </td>
+            <td><label for="textfield2"></label>
+            <input type="text" name="textfield2" id="cIntentos">
+            </td>
+        </tr>
+    </table>
+
+</head>
+
+
+
+<body>
+
+    <script>
+        var aleatorio = Math.round(Math.random() * 100);
+        var miNumero, intentos;
+    
+        miNumero = 0;
+        intentos = 0;
+    
+        var mensaje = document.getElementById("cMensaje");
+    
+        var intentosConsumidos = document.getElementById("cIntentos");
+    
+        do{
+            miNumero = prompt("Introduce un número entre 0 y 100");
+            if(aleatorio > miNumero){
+                mensaje.value = "Más alto";
+                mensaje.style.fontSize = "18px";
+            }
+    
+            if(aleatorio < miNumero){
+                mensaje.value = "Más bajo";
+                mensaje.style.fontSize = "18px";
+            }
+            intentos ++;
+
+            intentosConsumidos.value = intentos;
+            intentosConsumidos.style.fontSize = "18px";
+            intentosConsumidos.style.color = "red";
+            intentosConsumidos.style.textAlign = "center";
+    
+        }while(aleatorio != miNumero);
+
+        mensaje.value = "Correcto";
+        mensaje.style.color = "red";
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Documento sin titulo</title>
+
+<script>
+
+    var Trabajadores = new Array();
+    var persona = "";
+    var contador = 0;
+    while(persona != "salir"){
+
+        persona = prompt("Introduce trabajor");
+        Trabajadores[contador] = persona;
+        contador ++;
+    }
+
+    Trabajadores.pop();
+
+    for(var i = 0; i < Trabajadores.length; i ++){
+
+        document.write(Trabajadores[i] + "<br/>");
+    }
+</script>
+
+</head>
+
+
+
+<body>
+
+</body>
+</html>

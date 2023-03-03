@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Documento sin titulo</title>
+
+
+<script>
+
+    var repetir = "si";
+
+     function suma(x,y){
+
+            alert("La suma es: " + (x + y));
+    }
+
+    function resta(x,y){
+
+        alert("La resta es: " + (x - y));
+    }
+
+    function multiplicacion(x,y){
+
+        alert("La multiplicación es: " + (x * y));
+    }
+
+    function division(x,y){
+
+        alert("La división es: " + (x / y));
+    }
+    do{
+        var  operacion = prompt("¿Qué operación deseas realizar?");
+        var operador1 = parseInt(prompt("Introduce el primer número: "));
+        var operador2 = parseInt(prompt("Introduce el segundo número: "));
+
+        if(operacion == "sumar"){
+
+            suma(operador1, operador2);
+        }
+
+        else if(operacion == "resta"){
+
+            resta(operador1, operador2);
+        }
+
+        else if(operacion == "multiplicacion"){
+
+            multiplicacion(operador1, operador2);
+        }
+
+        else if(operacion == "division"){
+
+            division(operador1, operador2);
+
+        }
+        else{
+
+            alert("Esta opción no esta disponible");
+        }
+
+        repetir = prompt("¿Quieres volver a usar el programa?");
+
+    }while(repetir == "si");
+
+</script>
+
+</head>
+
+
+
+
+<body>
+</body>
+</html>

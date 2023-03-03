@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Documento sin titulo</title>
+</head>
+
+<body>
+
+<input type = "button" id = "boton1">
+
+<input type = "button" id = "boton2">
+
+<input type="text" id="micuadro">
+
+<script>
+    //Código que modifica la apariencia del boton
+    var miboton = document.getElementById("boton1");
+    miboton.style.width = "300px";
+    miboton.style.height = "300px";
+    //miboton.style.backgroundColor = "blue";
+
+    var miboton2 = document.getElementById("boton2");
+    miboton2.style.width = "300px";
+    miboton2.style.height = "300px";
+
+    var cuadroTexto = document.getElementById("micuadro");
+
+    miboton2.focus();
+
+    //cuadroTexto.style.backgroundColor = "red";
+    
+    cuadroTexto.style.background = "red";
+    cuadroTexto.value = "Escriba aquí por favor ";
+    cuadroTexto.style.height = "200px";
+</script>
+
+</body>
+</html>
